@@ -3,6 +3,8 @@ from django.utils import timezone
 from .models import Folder, Task
 from .forms import FolderForm, TaskForm
 
+def home(request):
+    return render(request, 'home.html')
 
 def index(request, id):
     #すべてのフォルダを取得する
